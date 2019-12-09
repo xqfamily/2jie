@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>从前。。。</title>
+	</head>
+	<!--text-align:center 这个样式可以让标签里面的所有内容居中！-->
+	<body style="texe-align: center;">
+		<!--这是一个网页的上头部分-->
+		<header>
+			<h1>信息收集</h1>
+		</header>
+		<!--这是一个网页中间部分 div 以后将是网页制作最最最常用的标签！-->
+	    <div>
+			<!--
+			    form 标签用于创建供用户输入的 HTML 表单
+				记得下面这俩属性的作用：
+				    action URL 规定当提交表单时向何处发送表单数据。
+					method get,post  规定用于发送表单数据的 HTTP
+			  -->
+			  <form action="http://hjh.3j168.com/wx/test" method="POST">
+				  <!--
+				      <Label>标签为 input 元素定义标注（标记).
+					  "for"s属性可把 label 绑定到另一个元素。请把“for”属性的值设置为相关元素的 id 属性的值。
+					  label 元素不会向用户呈现任何特殊效果。
+					  不过，它为鼠标用户改进了可用性
+					  如果您在 label 元素内点击文体，就会触发此控件。
+					  就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+					  王二姐请自行尝试运行起来以后在页面上面点击 你的名字 和 你的密码 有什么区别!
+					  -->
+					  <!--
+					      关于属性id，id就像一个人的身份证号！在一个网页中id是唯一的也就是说只能有一个，不可以重名
+						  -->
+						  <div>
+							  <label for="userName">你的名字：</label>
+							  <input type="text" name="userName" id="userName" value=""/>
+						  </div>
+						  <div>
+							  <label>你的密码：</label>
+							  <input type="password" name="userPassword" id="userPassword" 	value=""/>
+							  </div>
+							  <div>
+								  <label>你老人家照骗：</labeL>
+								  <input type="file" accept="image/*" name="userPhpne" id="userPassword"/>
+								  </div>
+								  <!--
+								       input 标签是单边标签，它有个属性叫type（类型）
+									   希望王二姐把每个type属性的值都尝试写出来一个标签体验下每个值的作用
+									   上面已经使用了text，password，file。剩下的需要自己写出来
+									   button     按钮
+									   checkbox   多选框
+									   color      颜色
+									   date       日期
+									   datetime   日期时间
+									   email      邮箱
+									   file       文件
+									   hidden     隐藏，不会在页面显示出来
+									   month      月份
+					                   number     数字，只能输入数字
+                                       password	  密码		  
+                                       radio      单选框
+                                       range		
+                                       reset      重置，点此按钮清空全部input的值
+                                       search     搜索
+                                       submit     提交按钮 
+									   text       文本内容
+									   time       时间
+									   week       周
+									   -->
+									   <!-- 以下面标签为模板，尝试下剩下的东西！ -->
+									   <div style="color:#F00">有朋自远方来，虽远必诛</div>
+									   <body style="text-align: center">
+										   <button type="button">按钮</button>
+									   </body>
+										   <label>XXXX：</label>
+										   <input type="XXXX" name="XXXX" id="XXXX" value=""/>
+									   </div>
+									   <div>
+										   <input type="checkbox" id="perfect" checked>
+										   <label for="perfect">优秀</label><br>
+										   <input type="checkbox" id="good">
+										   <label for="good">良好</label><br>
+										   <input type="checkbox" id="bad">
+										   <label for="bad">差</label><br>
+										   <input type="submit" />
+										   <input type="reset" />
+									   </div>
+									   </form>
+									   </div>
+									   <br/><br/><br/>
+									   <!--这是一个网页的最下面的部分，footer标签一般写网站的 页脚--》
+									   </footer>
+									   9102年，小二姐网站，备案号：XXXXXXXXXXXxx
+									   </body>
+									   </html>
+									   
+									 
+										<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
+                                       	<!-- 可选择菜单 -->
+                                       	<ul class="mui-table-view">
+                                       	  <li class="mui-table-view-cell">
+                                       		<a href="#">1菜单1</a>
+                                       	  </li>
+                                       	  <li class="mui-table-view-cell">
+                                       		<a href="#">2菜单2</a>
+                                       	  </li>
+                                       	</ul>
+                                       	<!-- 取消菜单 -->
+                                       	<ul class="mui-table-view">
+                                       	  <li class="mui-table-view-cell">
+                                       		<a href="#sheet1"><b>3取消</b></a>
+                                       	  </li>
+                                       	</ul>
+                                       </div>

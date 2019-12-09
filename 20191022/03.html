@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>从前...</title>
+</head>
+<!-- text-align: center  这个样式可以让标签里面的所有内容居中！ -->
+<body style="text-align: center;">
+
+    <!-- 这是一个网页的上头部分 -->
+    <header>
+        <h1>信息收集</h1>
+    </header>
+
+    <!-- 这是一个网页的中间部分 div 以后将是网页制作最最最常用的标签！！！-->
+    <div >
+        <!-- 
+            form 标签用于创建供用户输入的 HTML 表单
+            记得下面这俩属性的作用：
+                action	URL	规定当提交表单时向何处发送表单数据。
+                method	get，post	规定用于发送表单数据的 HTTP 方法。
+         -->
+        <form action="http://hjh.3j168.com/wx/test" method="POST">
+
+            <!-- 
+                <label> 标签为 input 元素定义标注（标记）。
+                "for" 属性可把 label 绑定到另外一个元素。请把 "for" 属性的值设置为相关元素的 id 属性的值。
+                label 元素不会向用户呈现任何特殊效果。
+                不过，它为鼠标用户改进了可用性。
+                如果您在 label 元素内点击文本，就会触发此控件。
+                就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+                王二姐请自行尝试运行起来以后在页面上面点击  你的名字 和 你的密码  有什么区别！
+             -->
+
+            <!-- 
+                关于属性id，id就像一个人的身份证号！在一个网页中id是唯一的也就是说只能有一个，不可以重名
+             -->
+
+            <div>
+                <label for="userName">你的名字：</label>
+                <input type="text" name="userName" id="userName" value="" />
+            </div>
+            <div>
+                <label>你的密码：</label>
+                <input type="password" name="userPassword" id="userPassword" value="" />
+            </div>
+            <div>
+                <label>你老人家照骗：</label>
+                <input type="file" accept="image/*" name="userPhpne" id="userPhpne"/>
+            </div>
+
+            <!-- 
+                input 标签是单标签，它有个属性叫type（类型）
+                希望王二姐把每个type属性的值都尝试写出来一个标签体验下每个值的作用
+                上面已经使用了text，password，file。剩下的需要你自己写出来
+                button    按钮
+                checkbox  多选框
+                color     颜色
+                date      日期
+                datetime  日期时间
+                email     邮箱
+                file      文件
+                hidden    隐藏，不会在页面显示出来
+                month     月份
+                number    数字，只能输入数字
+                password  密码
+                radio     单选框
+                range     
+                reset     重置，点此按钮清空全部input的值
+                search    搜索
+                submit    提交按钮
+                text      文本内容
+                time      时间
+                week      周
+             -->
+                
+            <!-- 以下面标签为模板，尝试下剩下的东西！ -->
+            <div>
+                <label>选择你喜欢的颜色：</label>
+                <input type="color" name="color" id="color" value="" />
+            </div>
+            <div>
+                <label>日期：</label>
+                <input type="date" name="date" id="date" value="" />
+            </div>
+            <div>
+                <label>日期和时间：</label>
+                <input type="datetime" name="datetime" id="datetime" value="" />
+            </div>
+            <div>
+                <label>邮箱：</label>
+                <input type="email" name="email" id="email" value="" />
+            </div>
+            <div>
+                <label>数字：</label>
+                <input type="number" name="number" id="number" value="" />
+            </div>
+            <div>
+                <label>性别：</label>
+                <input type="radio" name="sex" id="nan" value="男" />
+                <input type="radio" name="sex" id="nv" value="女" />
+            </div>
+
+            <div>
+                <label>爱好：</label>
+                <input type="checkbox" id="chi"> 吃
+                 <input type="checkbox" id="he" checked> 喝 <!--增加checked 这个属性，页面显示的时候会默认选中这个选项 -->
+                <input type="checkbox" id="wan" disabled> 玩 <!--disabled（禁用） 这个属性，在页面将无法选中这个选项，只能看没法点 -->
+                <input type="checkbox" id="le"> 乐
+            </div>
+
+
+            <div>
+                <input type="submit" value="确定"  name="submit" />
+                <input type="reset" value="重置" name="reset" />
+            </div>
+        </form>
+    </div>
+    
+
+    <br/><br/><br/>
+    <!-- 这是一个网页的最下面的部分，footer标签一般写网站的 页脚-->
+    <footer>
+        9102年，小二姐网站，备案号：XXXXXXXXXXxx
+    </footer>
+
+</body>
+
+</html>

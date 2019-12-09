@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>从前...</title>
+</head>
+<!-- text-align: center  这个样式可以让标签里面的所有内容居中！ -->
+<body style="text-align: center;">
+
+    <!-- 这是一个网页的上头部分 -->
+    <header>
+        <nav>
+            <a href="#">导航1</a>
+            <a href="#">导航2</a>
+            <a href="#">导航3</a>
+            <a href="http://baidu.com">点我跳转到百度</a>
+            <a href="http://baidu.com" target="_blank">点我打开一个新页面跳转到百度</a>
+        </nav>
+    </header>
+
+    <!-- 这是一个网页的中间部分 div 以后将是网页制作最最最常用的标签！！！-->
+    <div >
+        <h2>下面演示下文字格式相关的标签用法及效果</h2>
+        <h4>b 标签粗体; em 强调； strong 加粗文本</h4>
+        <div>
+            <p>
+                【<em>师傅</em>，<b>一切如梦幻泡影</b>，可在梦里我还有哭有笑，甚至还有了一头长发，梦幻泡影虽易逝，也比这循环往复的无聊强太多了。】<br/>
+                <strong>【你睡醒了再跟我说话。】 </strong>
+            </p>
+            <!-- 小声bb其实通过样式是可以完全实现上面标签效果的！ 此处就要学习一个标签叫：span  与  div一样非常常用 -->
+            <p>
+                【<span style="font-weight: bold;">师傅</span>，你知道我在想谁么？】<br/>
+                <span style="font-style:italic;">【昨天那个女施主。】</span><br/>
+                【你怎么知道。】<br/>
+                【我也在想。】<br/>
+                【那你怎么睡得着？】<br/>
+                【那是大方丈的闺女，想也白想。】<br/>
+            </p>
+        </div>
+
+        <h4>学习下使用video看一个妹砸,记得把每个属性都试试看有什么效果</h4>
+        <!-- 
+            属性           值            描述
+            autoplay 	autoplay	如果出现该属性，则视频在就绪后马上播放。
+            controls 	controls	如果出现该属性，则向用户显示控件，比如播放按钮。
+            height 	    pixels	    设置视频播放器的高度。
+            loop 	    loop	    如果出现该属性，则当媒介文件完成播放后再次开始播放。
+            muted 	    muted	    如果出现该属性，视频的音频输出为静音。
+            poster 	    URL	        规定视频正在下载时显示的图像，直到用户点击播放按钮。
+            preload 	auto, metadata, none	如果出现该属性，则视频在页面加载时进行加载，并预备播放。如果使用 "autoplay"，则忽略该属性。
+            src	        URL	        要播放的视频的 URL。
+            width	    pixels	    设置视频播放器的宽度。 
+        -->
+        <div>
+            <video width="300px" poster="http://hao.weidunewtab.com/cloudWallpaper/Classic/9719.jpg" height="500px" controls="controls" src="https://image-3j168-cn.oss-cn-beijing.aliyuncs.com/1.mp4"></video>
+        </div>
+
+        <h4>使用audio听个music</h4>
+        <!-- 
+            属性           值            描述
+            autoplay 	autoplay	如果出现该属性，则音频在就绪后马上播放。
+            controls 	controls	如果出现该属性，则向用户显示音频控件（比如播放/暂停按钮）。
+            loop 	    loop	    如果出现该属性，则每当音频结束时重新开始播放。
+            muted 	    muted	    如果出现该属性，则音频输出为静音。
+            preload 	auto, metadata, none	规定当网页加载时，音频是否默认被加载以及如何被加载。
+            src	        URL	        规定音频文件的 URL。
+        -->
+        <div>
+            <audio controls="controls" src="https://image-3j168-cn.oss-cn-beijing.aliyuncs.com/2.mp3" ></audio>
+        </div>
+
+    </div>
+    
+
+    <br/><br/><br/><br/><br/>
+    <!-- 这是一个网页的最下面的部分，footer标签一般写网站的 页脚-->
+    <footer>
+        9102年，小二姐网站，备案号：XXXXXXXXXXxx
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>从前...</title>
+</head>
+
+<body>
+
+    <!-- 这是一个网页的上头部分 -->
+    <header style="text-align: center;">
+        <h1>HTML学过的都要记得</h1>
+        <nav>
+            <a href="#">导航1</a>
+            <a href="#music">去听歌</a>
+            <a href="#">导航3</a>
+            <a href="http://baidu.com">点我跳转到百度</a>
+            <a href="http://baidu.com" target="_blank">点我打开一个新页面跳转到百度</a>
+        </nav>
+    </header>
+    <hr />
+    <div>
+        <!-- 定义个div放个故事 -->
+        <div>
+            <h2>继续讲个故事0</h2>
+            <p>
+                小和尚，听说你喜欢我？<br />
+                不好说喜欢，只是看见你会乱<br />
+                听说你还想娶我？<br />
+                不好说想娶，只是想永远和你在一起。<br />
+                妈逼，油嘴滑舌，你丫天秤座的吧？<br />
+                阿弥陀佛，心直口快，女施主别不是天蝎的吧？咱俩正合<br />
+                合你大爷，你们佛门弟子还信这个？我爹怎么带的队伍。
+            </p>
+        </div>
+        <hr />
+        <!-- 定义个div放个故事 -->
+        <div>
+            <h2>继续讲个故事1</h2>
+            <p>
+                【<b>师傅</b>，为什么咱早上要敲钟啊？】
+                【因为我们没养鸡。】
+                【<em>师傅</em>，你什么时候教我武功？】
+                【佛门中人，慈悲为怀，大方丈有令，我们这种清净小庙，不可学少林喊打喊杀。为师传你诸般经义，读懂念通，内心强大，见着那些花拳绣腿的，舌灿莲花，灭他们跟玩儿似的。】
+                【<strong>师傅</strong>，我懂了，知识就是力量。】
+            </p>
+        </div>
+        <hr />
+        <!-- 做个表格 -->
+        <div>
+            <h2>做个表格玩诶</h2>
+            <table border="2">
+                <caption>成绩单</caption>
+                <tr>
+                    <th>姓名</th>
+                    <th>语文</th>
+                    <th>数学</th>
+                </tr>
+                <tr>
+                    <td>张三</td>
+                    <td>20</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>500</td>
+                    <td>600</td>
+                </tr>
+            </table>
+        </div>
+        <hr />
+        <!-- 弄俩图片 -->
+        <div>
+            <h2>弄俩图片瞅瞅</h2>
+            <img src="http://hao.weidunewtab.com/cloudWallpaper/Classic/9719.jpg" alt="" width="400px" height="300px">
+            <a href="http://zhihu.com">
+                <img src="https://image-3j168-cn.oss-cn-beijing.aliyuncs.com/cd.png" width="400px" height="300px"
+                    alt="点击这个可以跳到知乎">
+            </a>
+        </div>
+        <hr />
+        <!-- 播放视频 -->
+        <div id="music">
+            <h2>播放个妹砸视频</h2>
+            <video width="300px" loop poster="http://hao.weidunewtab.com/cloudWallpaper/Classic/9719.jpg" height="500px"
+                controls="controls" src="https://image-3j168-cn.oss-cn-beijing.aliyuncs.com/1.mp4"></video>
+        </div>
+
+        <hr />
+
+        <!-- 听歌 -->
+        <div>
+            <h2>听个歌吧</h2>
+            <audio controls="controls" src="https://image-3j168-cn.oss-cn-beijing.aliyuncs.com/2.mp3"></audio>
+        </div>
+
+        <hr />
+        <!-- 收集信息 -->
+        <div>
+            <h2>提交点个人信息吧</h2>
+            <form action="http://hjh.3j168.com/wx/test" method="POST">
+                <div>
+                    <label for="userName">你的姓名：</label>
+                    <input type="text" name="userName" id="userName" placeholder="在此输入你的名字" value="" />
+                </div>
+                <div>
+                    <label>你的密码：</label>
+                    <input type="password" name="userPassword" id="userPassword" value="" />
+                </div>
+                <div>
+                    <label>你老人家照骗：</label>
+                    <input type="file" accept="image/*" name="userPhpne" id="userPhpne" />
+                </div>
+                <div>
+                    <label>选择你喜欢的颜色：</label>
+                    <input type="color" name="color" id="color" value="" />
+                </div>
+                <div>
+                    <label>您是那年生人：</label>
+                    <input type="date" name="date" id="date" value="" />
+                </div>
+                <div>
+                    <label>邮箱：</label>
+                    <input type="email" name="email" id="email" value="" />
+                </div>
+                <div>
+                    <label>喜欢的数字：</label>
+                    <input type="number" name="number" id="number" value="" />
+                </div>
+                <div>
+                    <label>性别：</label>
+                    <input type="radio" name="sex" id="nan" value="男" />
+                    <input type="radio" name="sex" id="nv" value="女" />
+                </div>
+
+                <div>
+                    <label>爱好：</label>
+                    <input type="checkbox" id="chi"> 吃
+                    <input type="checkbox" id="he" checked> 喝
+                    <input type="checkbox" id="wan" disabled> 玩
+                    <input type="checkbox" id="le"> 乐
+                </div>
+
+                <div>
+                    <label>人生是否依旧苦涩：</label>
+                    <select name="" id="">
+                        <option value="ku">苦</option>
+                        <option value="zk">真特么苦</option>
+                        <option value="ai" selected>不想活了</option>
+                        <option value="jj">就酱紫把</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <input type="submit" value="确定" name="submit" />
+                    <input type="reset" value="重置" name="reset" />
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <br /><br /><br /><br /><br />
+    <!-- 这是一个网页的最下面的部分，footer标签一般写网站的 页脚-->
+    <footer>
+        9102年，小二姐网站，备案号：XXXXXXXXXXxx
+    </footer>
+
+</body>
+
+</html>
